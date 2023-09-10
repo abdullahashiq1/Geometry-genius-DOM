@@ -15,11 +15,38 @@
                 <h1 class="text-4xl font-extrabold">Interactive</h1>
                 <p class="text-2xl">Geometry Genius</p>
             </div>
-            <div class="content-center">           
-                <button class="bg-blue-600/75 text-white font-bold px-5 py-2 rounded-lg             hover:bg-violet-600 active:bg-violet-700 content-center">Blog</button>
+            <div class="flex items-center">           
+                <button class="bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg             hover:bg-violet-600 active:bg-violet-700 ">Blog</button>
             </div>
         </div>
     </section>
 
+    <!-- geometry section  -->
+    <section class="grid grid-cols-2 gap-4 m-8">
+        <div clas="">
+
+            <div class="grid grid-cols-3 gap-4">
+                <!-- cards  -->
+                <div class="border border-inherit-400 rounded p-6">
+                    <img src="images/triangle.png" alt="">
+                    <h2 class="text-3xl font-medium mt-4 text-center">Triangle</h2>
+                    <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+
+                    <div class="text-center mt-5 flex flex-row">
+                        <input class="bg-gray-100 rounded-lg py-1 px-2 box-border basis-1/4" 
+                        type="text" name="" id="" placeholder="b"><span class="px-1">cm</span>
+                        <input class="bg-gray-100 rounded ml-3 py-1 px-2 box-border basis-1/4" 
+                        type="text" name="" id="" placeholder="h"><span class="px-1">cm<span>                        
+                    </div>
+
+                    <button class="bg-blue-600/75 w-full mt-6 text-white font-bold px-6 py-2              rounded-lg      hover:bg-violet-600 active:bg-violet-700 block text-center mx-auto">Calculate</button>
+                </div>        
+
+            </div>
+        </div>
+        <div class="border border-inherit-400 rounded p-6">
+            <h2 class="text-2xl">Area Calculation</h2>
+        </div>
+    </section>
 </body>
 </html>
