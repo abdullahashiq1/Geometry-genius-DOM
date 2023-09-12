@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Geometry Genius</title>
+    <!-- tailwindcss  -->
     <script src="https://cdn.tailwindcss.com"></script>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- heading section  -->
@@ -22,30 +23,103 @@
     </section>
 
     <!-- geometry section  -->
-    <section class="grid grid-cols-2 gap-4 m-8">
-        <div clas="">
-
-            <div class="grid grid-cols-3 gap-4">
-                <!-- cards  -->
-                <div class="border border-inherit-400 rounded p-6">
-                    <img src="images/triangle.png" alt="">
-                    <h2 class="text-3xl font-medium mt-4 text-center">Triangle</h2>
-                    <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
-
-                    <div class="text-center mt-5 flex flex-row">
-                        <input class="bg-gray-100 rounded-lg py-1 px-2 box-border basis-1/4" 
-                        type="text" name="" id="" placeholder="b"><span class="px-1">cm</span>
-                        <input class="bg-gray-100 rounded ml-3 py-1 px-2 box-border basis-1/4" 
-                        type="text" name="" id="" placeholder="h"><span class="px-1">cm<span>                        
+    <section class="m-2 p-10">
+        <div class="grid grid-cols-4 gap-4">
+            <!-- cards part  -->
+            <div class="col-span-3">
+                <div class="grid grid-cols-3 gap-4">
+                    <div class="border-2 rounded-lg p-6">
+                        <img class="mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-2xl text-center font-medium mt-4">Traiangle</h2>
+                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <!-- input  -->
+                        <div class="text-center">
+                            <input  id="" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
+                            <input  id="" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                        </div>
+                            <br>
+                        <button class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
+                    </div>
+                    
+                    <div class="border-2 rounded-lg p-6">
+                        <img class="mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-2xl text-center font-medium mt-4">Traiangle</h2>
+                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <!-- input  -->
+                        <div class="text-center">
+                            <input  id="" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
+                            <input  id="" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                        </div>
+                            <br>
+                        <button class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
 
-                    <button class="bg-blue-600/75 w-full mt-6 text-white font-bold px-6 py-2              rounded-lg      hover:bg-violet-600 active:bg-violet-700 block text-center mx-auto">Calculate</button>
-                </div>        
-
+                     <div class="border-2 rounded-lg p-6">
+                        <img class="mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-2xl text-center font-medium mt-4">Traiangle</h2>
+                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <!-- input  -->
+                        <div class="text-center">
+                            <input  id="" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
+                            <input  id="" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                        </div>
+                            <br>
+                        <button class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
+                    </div>
+                    <div class="border-2 rounded-lg p-6">
+                        <img class="mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-2xl text-center font-medium mt-4">Traiangle</h2>
+                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <!-- input  -->
+                        <div class="text-center">
+                            <input  id="" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
+                            <input  id="" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                        </div>
+                            <br>
+                        <button class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
+                    </div>
+                    <div class="border-2 rounded-lg p-6">
+                        <img class="mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-2xl text-center font-medium mt-4">Traiangle</h2>
+                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <!-- input  -->
+                        <div class="text-center">
+                            <input  id="" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
+                            <input  id="" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                        </div>
+                            <br>
+                        <button class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
+                    </div>
+                    <div class="border-2 rounded-lg p-6">
+                        <img class="mx-auto" src="images/triangle.png" alt="">
+                        <h2 class="text-2xl text-center font-medium mt-4">Traiangle</h2>
+                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <!-- input  -->
+                        <div class="text-center">
+                            <input  id="" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
+                            <input  id="" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
+                            px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                        </div>
+                            <br>
+                        <button class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="border border-inherit-400 rounded p-6">
-            <h2 class="text-2xl">Area Calculation</h2>
+            <!-- area part  -->
+            <div>
+                <h2>Area Calculation</h2>
+            </div>
         </div>
     </section>
 </body>
