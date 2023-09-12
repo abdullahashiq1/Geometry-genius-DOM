@@ -1,3 +1,9 @@
-.input-width{
+/* .input-width{
     width: 100px;
+} */
+
+.container{
+    border: 2px solid rgb(233, 231, 231);
+    border-radius: 8px;
+    height: 40%;
 }
