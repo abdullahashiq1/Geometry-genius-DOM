@@ -7,6 +7,9 @@
     <!-- tailwindcss  -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <!-- heading section  -->
@@ -33,6 +36,8 @@
                     <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/triangle.png" alt="">
                         <h2 id="triangle-name" class="text-2xl text-center font-medium mt-4">Triangle</h2>
+                        
+                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
                         <!-- input  -->
                         <div class="text-center">
@@ -40,7 +45,9 @@
                             px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
                             <input  id="triangle-input-h" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
+                            
                         </div>
+                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="triangle-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
@@ -48,6 +55,8 @@
                     <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/rectangle.png" alt="">
                         <h2 id="rectangle-name" class="text-2xl text-center font-medium mt-4">Rectangle</h2>
+                        
+                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = w x I</p>
                         <!-- input  -->
                         <div class="text-center">
@@ -56,6 +65,7 @@
                             <input  id="rectangle-i" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="I" type="text" name=""> <span> cm</span>
                         </div>
+                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="rectangle-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
@@ -63,6 +73,7 @@
                      <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/parallelogram.png" alt="">
                         <h2 id="para-name" class="text-2xl text-center font-medium mt-4">Parallelogram</h2>
+                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = b x h</p>
                         <!-- input  -->
                         <div class="text-center">
@@ -71,12 +82,14 @@
                             <input  id="para-h" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
                         </div>
+                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="parallelogram-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
                     <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/rhombus.png" alt="">
                         <h2 id="rhombus-name" class="text-2xl text-center font-medium mt-4">Rhombus</h2>
+                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
                         <!-- input  -->
                         <div class="text-center">
@@ -85,12 +98,15 @@
                             <input  id="rhombus-d2" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="d2" type="text" name=""> <span> cm</span>
                         </div>
+                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="rhombus-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
                     <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/pentagon.png" alt="">
                         <h2 id="pentagon-name" class="text-2xl text-center font-medium mt-4">Pentagon</h2>
+                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
+                        
                         <p class="text-sm text-center">Area(A) = 0.5 x p x b</p>
                         <!-- input  -->
                         <div class="text-center">
@@ -99,12 +115,14 @@
                             <input  id="pentagon-b" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
                         </div>
+                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="pentagon-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
                     <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/ellipse.png" alt="">
                         <h2 id="ellipse-name" class="text-2xl text-center font-medium mt-4">Ellipse</h2>
+                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = &#960; a x b</p>
                         <!-- input  -->
                         <div class="text-center">
@@ -113,6 +131,7 @@
                             <input  id="ellipse-b" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
                         </div>
+                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="ellipse-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
@@ -125,10 +144,6 @@
                 underline underline-offset-8">Area Calculation</h2>
                 <div>
                     <ol id="calculation-list" class="list-decimal ">
-                        <!-- flex justify-between  -->
-                        <!-- <button id="convertMetre" class="convertM text-center bg-blue-600/75 text-white font-bold px-1 py-2 
-                        rounded-lg hover:bg-violet-600 
-                        active:bg-violet-700 ">Convert to m<sup>2</sup></button> -->
     
                     </ol>  
                 </div>
