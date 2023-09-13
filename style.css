@@ -7,9 +7,26 @@
     border-radius: 8px;
     height: 40%;
 }
+
 .convertM{
-    display: none;
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 20px
 }
+
+.convertM:hover{
+    background-color: #0056b3;
+}
+
+.convertM:active{
+    background-color: #004699;
+}
+
 
 /* responsive design:: mobile device */
 @media screen and (min-width: 350px) and (max-width: 600px){
