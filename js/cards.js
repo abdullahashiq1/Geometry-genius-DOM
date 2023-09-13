@@ -23,3 +23,35 @@ document.querySelector('#parallelogram-btn').addEventListener('click', function(
 document.querySelector('#ellipse-btn').addEventListener('click', function(){
     ellipses('ellipse-a', 'ellipse-b', 'ellipse-name')
 })
+
+
+// random background color change when mouse over on a card 
+function getRandomColor(){
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for(var i=0; i<6; i++){
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    // console.log(color)
+    return color;
+}
+
+const divs = document.querySelectorAll('.randomColor');
+divs.forEach(function(card){
+    card.addEventListener('mouseover', function(){
+        card.style.backgroundColor = getRandomColor()
+    })
+})
+divs.forEach(function(clear){
+    clear.addEventListener('mouseout', function(){
+        // clear.style.backgroundColor = '';
+        clear.style.backgroundColor = 'transparent'
+    })
+})
+
+
+// page redirect to another page 
+document.querySelector('#redirect').addEventListener('click', function(){
+    // window.location.href = 'questions.html';
+    window.open('questions.html', '_blank')
+})
