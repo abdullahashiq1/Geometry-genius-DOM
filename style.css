@@ -10,3 +10,29 @@
 .convertM{
     display: none;
 }
+
+/* responsive design:: mobile device */
+@media screen and (min-width: 350px) and (max-width: 600px){
+    body{
+        margin: auto;
+        padding: auto;
+    }
+    .header{
+        background-color: #ccc;
+    }
+    .logo{
+        display: none;
+        background-color: #ccc;
+
+    }
+    .blog{
+        margin-left: 85px;
+        background-color: #ccc;
+
+    }
+    .gridCss{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+}
