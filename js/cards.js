@@ -1,26 +1,25 @@
-function threeInput(){
-
-}
-
-
+// three prameters geometry 
 document.querySelector('#triangle-btn').addEventListener('click', function(){
-    const firstId = elementById('triangle-input-b');
-    const secondId = elementById('triangle-input-h');
-    // triangle calculation 
-    if(!isNaN(firstId) && !isNaN(secondId)){
-        const triangle = 0.5 * firstId * secondId;
-        const triangleCm = triangle + 'cm<sup>2</sup>';
-        console.log(triangleCm)
-    
-        const li = document.createElement('li');
-        li.innerHTML = triangle;
-        const olId = document.getElementById('calculation-list');
-        olId.appendChild(li);
-    
-    }
-    else{
-        JSAlert.alert("Please enter numeric value or valid!");
-    }
+    threeParams('triangle-input-b', 'triangle-input-h', 'triangle-name')
 })
 
+document.querySelector('#rhombus-btn').addEventListener('click', function(){
+    threeParams('rhombus-d1', 'rhombus-d2', 'rhombus-name');
+})
 
+document.querySelector('#pentagon-btn').addEventListener('click', function(){
+    threeParams('pentagon-p', 'pentagon-b', 'pentagon-name')
+})
+
+// two parameter geometry 
+document.querySelector('#rectangle-btn').addEventListener('click', function(){
+    twoParams('rectangle-w', 'rectangle-i', 'rectangle-name')
+    
+});
+document.querySelector('#parallelogram-btn').addEventListener('click', function(){
+    twoParams('para-b', 'para-h', 'para-name');
+});
+// PI geometry
+document.querySelector('#ellipse-btn').addEventListener('click', function(){
+    ellipses('ellipse-a', 'ellipse-b', 'ellipse-name')
+})
