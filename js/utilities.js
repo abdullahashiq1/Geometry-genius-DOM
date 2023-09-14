@@ -101,9 +101,45 @@ function ellipses(firstValue, secondValue, nameId){
     }
 }
 
+/* const penIcon = document.getElementById('tri-penIcon');
+    penIcon.onclick = function() {
+        const formula = document.getElementById('triangle-formula');
+        formula.style.fontWeight = 700;
 
-  
+};   
+*/  
+// toggle part 
+function setBoldToggle(penIconId, formulaId){
+    const penIcon = document.getElementById(penIconId);
+    const formula = document.getElementById(formulaId);
+    let fontWeightBold = false; // initial state 
+    penIcon.onclick = function(){
+        if(fontWeightBold){
+            formula.style.fontWeight = 'normal';
+        } else{
+            formula.style.fontWeight = 'bold'
+        }
+        fontWeightBold = !fontWeightBold;   // toggle situation
+    }
+}
 
+// Toggle checkbox
+function toggleCheckbox(checkboxId, firstInputId, secondInputId){
+    const checkbox = document.getElementById(checkboxId);
+    const firstInput = document.getElementById(firstInputId);
+    const secondInput = document.getElementById(secondInputId);
+    
+    checkbox.addEventListener('change', function(){
+        if(checkbox.checked){
+            firstInput.disabled = true;
+            secondInput.disabled = true;
+        }
+        else{
+            firstInput.disabled = false
+            secondInput.disabled = false;
+        }
+    })
+}
 
 
 

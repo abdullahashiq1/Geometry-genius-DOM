@@ -37,8 +37,8 @@
                         <img class="mx-auto" src="images/triangle.png" alt="">
                         <h2 id="triangle-name" class="text-2xl text-center font-medium mt-4">Triangle</h2>
                         
-                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
-                        <p class="text-sm text-center">Area(A) = 0.5 x b x h</p>
+                        <p id="tri-penIcon" class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
+                        <p class="text-sm text-center">Area(A) = <span id="triangle-formula"> 0.5 x b x h</span></p>
                         <!-- input  -->
                         <div class="text-center">
                             <input  id="triangle-input-b" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
@@ -47,7 +47,6 @@
                             px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
                             
                         </div>
-                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="triangle-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
@@ -56,8 +55,8 @@
                         <img class="mx-auto" src="images/rectangle.png" alt="">
                         <h2 id="rectangle-name" class="text-2xl text-center font-medium mt-4">Rectangle</h2>
                         
-                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
-                        <p class="text-sm text-center">Area(A) = w x I</p>
+                        <p id="rec-penIcon" class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
+                        <p class="text-sm text-center">Area(A) = <span id="rec-formula">w x I</span></p>
                         <!-- input  -->
                         <div class="text-center">
                             <input  id="rectangle-w" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
@@ -65,7 +64,6 @@
                             <input  id="rectangle-i" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="I" type="text" name=""> <span> cm</span>
                         </div>
-                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="rectangle-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
@@ -73,23 +71,21 @@
                      <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/parallelogram.png" alt="">
                         <h2 id="para-name" class="text-2xl text-center font-medium mt-4">Parallelogram</h2>
-                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = b x h</p>
                         <!-- input  -->
                         <div class="text-center">
-                            <input  id="para-b" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
+                            <input id="para-b" style="width: 100px;" class="border-2 mt-6  focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="b" type="text" name=""> <span> cm</span>
                             <input  id="para-h" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="h" type="text" name=""> <span> cm</span>
                         </div>
-                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
+                        <input id="para-check" class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="parallelogram-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg            hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
                     <div class="randomColor border-2 rounded-lg p-6">
                         <img class="mx-auto" src="images/rhombus.png" alt="">
                         <h2 id="rhombus-name" class="text-2xl text-center font-medium mt-4">Rhombus</h2>
-                        <p class="float-right text-xl cursor-pointer"><i class="fa-regular fa-pen-to-square"></i></p>
                         <p class="text-sm text-center">Area(A) = 0.5 x d<sub>1</sub> x d<sub>2</sub> </p>
                         <!-- input  -->
                         <div class="text-center">
@@ -98,7 +94,7 @@
                             <input  id="rhombus-d2" style="width: 100px;" class="ml-3 border-2 mx-auto focus:outline-none focus:ring focus:ring-violet-500 
                             px-2 py-1 rounded-lg" placeholder="d2" type="text" name=""> <span> cm</span>
                         </div>
-                        <input class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
+                        <input id="rhombus-check" class="float-right text-3xl cursor-pointer" style="width: 30px; height: 30px;" type="checkbox" name="" id="">
                             <br>
                         <button id="rhombus-btn" class="mt-6 mb-3 text-center w-full bg-blue-600/75 text-white font-bold px-6 py-2 rounded-lg hover:bg-violet-600 active:bg-violet-700 ">Calculate</button>
                     </div>
